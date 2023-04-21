@@ -6,7 +6,7 @@
 /*   By: fcoca-me <fcoca-me@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/20 10:36:18 by fcoca-me          #+#    #+#             */
-/*   Updated: 2023/04/20 10:44:01 by fcoca-me         ###   ########.fr       */
+/*   Updated: 2023/04/21 10:13:41 by fcoca-me         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,4 +36,5 @@ int	ft_atoi(const char *str)
 		i++;
 	}
 	return (res * sign);
+	eyyy
 }
