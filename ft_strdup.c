@@ -2,20 +2,20 @@
 
 char	*ft_strdup(const char *src)
 {
-    char	*dest;
-    int		i;
+	char	*dest;
+	int		i;
 
-    i = 0;
-    dest = malloc(sizeof(char) * ft_strlen(src) + 1);
-    if (dest == NULL)
-        return (NULL);
-    while (src[i] != '\0')
-    {
-        dest[i] = src[i];
-        ++i;
-    }
-    dest[i] = '\0';
-    return (dest);
+	i = 0;
+	dest = malloc(sizeof(char) * ft_strlen(src) + 1);
+	if (dest == NULL)
+		return (NULL);
+	while (src[i] != '\0')
+	{
+		dest[i] = src[i];
+		++i;
+	}
+	dest[i] = '\0';
+	return (dest);
 }
 
 // int	main(void)
@@ -41,4 +41,4 @@ char	*ft_strdup(const char *src)
 // terminator is a character with the value 0.  It is used to mark the end
 // of the string.  The string "Hello World!" is 12 characters long, but the
 // array that holds it is 13 characters long.  The last character is the null
-// terminator.  The null terminator is not part of the string. 
+// terminator.  The null terminator is not part of the string.
