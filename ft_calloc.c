@@ -1,15 +1,26 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: fcoca-me <fcoca-me@student.42malaga.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/04/30 08:41:00 by fcoca-me          #+#    #+#             */
+/*   Updated: 2023/04/30 08:41:18 by fcoca-me         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
-void    *ft_calloc(size_t count, size_t size)
+void	*ft_calloc(size_t count, size_t size)
 {
-    void	*ptr;
+	void	*ptr;
 
-    ptr = malloc(count * size);
-    if (ptr == NULL)
-        return (NULL);
-    ft_bzero(ptr, count * size);
-    return (ptr);
+	ptr = malloc(count * size);
+	if (ptr == NULL)
+		return (NULL);
+	ft_bzero(ptr, count * size);
+	return (ptr);
 }
 
 // int	main(void)
@@ -33,4 +44,3 @@ void    *ft_calloc(size_t count, size_t size)
 // ** pointer value that can later be successfully passed to free().
 // ** If the multiplication of count and size would result in integer
 // ** overflow, then calloc() returns an error.
-

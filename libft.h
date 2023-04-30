@@ -6,7 +6,7 @@
 /*   By: fcoca-me <fcoca-me@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/20 10:37:01 by fcoca-me          #+#    #+#             */
-/*   Updated: 2023/04/26 10:33:46 by fcoca-me         ###   ########.fr       */
+/*   Updated: 2023/04/30 12:41:13 by fcoca-me         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ char			*ft_strnstr(const char *haystack, const char *needle,
 void			*ft_calloc(size_t count, size_t size);
 char			*ft_strdup(const char *s1);
 char			*ft_substr(char const *s, unsigned int start, size_t len);
-
+char			*ft_strtrim(char const *s1, char const *set);
+char			*ft_strjoin(char const *s1, char const *s2);
 
 #endif
