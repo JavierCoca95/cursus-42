@@ -6,7 +6,7 @@
 /*   By: fcoca-me <fcoca-me@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/20 10:37:01 by fcoca-me          #+#    #+#             */
-/*   Updated: 2023/04/30 12:41:13 by fcoca-me         ###   ########.fr       */
+/*   Updated: 2023/04/30 13:15:02 by fcoca-me         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stdio.h>
 # include <stdlib.h>
+# include <unistd.h>
 
 size_t			ft_strlcpy(char *dst, const char *src, size_t dstsize);
 int				ft_atoi(const char *str);
@@ -43,5 +44,9 @@ char			*ft_strdup(const char *s1);
 char			*ft_substr(char const *s, unsigned int start, size_t len);
 char			*ft_strtrim(char const *s1, char const *set);
 char			*ft_strjoin(char const *s1, char const *s2);
+void			ft_putchar_fd(char c, int fd);
+void			ft_putendl_fd(char *s, int fd);
+void			ft_putnbr_fd(int n, int fd);
+void			ft_putstr_fd(char *s, int fd);
 
 #endif
