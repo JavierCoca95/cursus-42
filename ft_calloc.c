@@ -6,7 +6,7 @@
 /*   By: fcoca-me <fcoca-me@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/30 08:41:00 by fcoca-me          #+#    #+#             */
-/*   Updated: 2023/04/30 08:41:18 by fcoca-me         ###   ########.fr       */
+/*   Updated: 2023/05/02 10:16:38 by fcoca-me         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,5 +42,5 @@ void	*ft_calloc(size_t count, size_t size)
 // ** value zero.
 // ** If count or size is 0, then calloc() returns either NULL, or a unique
 // ** pointer value that can later be successfully passed to free().
-// ** If the multiplication of count and size would result in integer
+// ** If the multiplication of count and size would new_s in integer
 // ** overflow, then calloc() returns an error.
