@@ -11,53 +11,45 @@
 /* ************************************************************************** */
 #include "libft.h"
 
-static int	ft_intlen(int i)
+static	size_t	ft_intlen(int num)
 {
-	int	count;
+	size_t	len;
 
-	count = 1;
-	if (i < 0)
+	len = 0;
+	if (num <= 0)
+		len++;
+	while (num != 0)
 	{
-		i *= -1;
-		count++;
+		len++;
+		num /= 10;
 	}
-	while (i >= 10)
-	{
-		i /= 10;
-		count++;
-	}
-	return (count);
+	return (len);
 }
 
 char	*ft_itoa(int n)
 {
-	int i;
-	int len;
-	char *str;
+	size_t	len;
+	long	num;
+	char	*new_s;
 
-	if (n == -2147483648)
-		return (ft_strdup("-2147483648"));
-	i = 0;
-	if (n < 0)
-		i = 1;
-	len = ft_intlen(n) + i;
-	str = (char *)malloc(sizeof(char) * (len + 1));
-	if (str == NULL)
+	len = ft_intlen(n);
+	num = n;
+	new_s = (char *)malloc((sizeof(char) * len) + 1);
+	if (new_s == NULL)
 		return (NULL);
-	if (n == 0)
-		str[0] = '0';
-	if (n < 0)
+	if (num < 0)
 	{
-		str[0] = '-';
-		n *= -1;
+		new_s[0] = '-';
+		num *= -1;
 	}
-	str[len] = '\0';
-	while (n > 0) 
+	else if (num == 0)
+		new_s[0] = '0';
+	new_s[len--] = '\0';
+	while (num != 0)
 	{
+		new_s[len] = (num % 10) + '0';
+		num /= 10;
 		len--;
-		str[len] = (n % 10) + '0';
-		n /= 10;
 	}
-	str[len] = '\0';
-	return (str);
+	return (new_s);
 }
