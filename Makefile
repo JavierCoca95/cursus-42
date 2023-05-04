@@ -36,18 +36,21 @@ ft_itoa.c\
 ft_strmapi.c\
 ft_striteri.c\
 ft_lstnew.c
+BNS_SRCS := ft_lstnew.c\
+ft_lstadd_front.c
 OBJS := $(SRC:.c=.o)
+BNS_OBJS := $(BNS_SRCS:%.c=%.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
-	
+
 $(OBJS): $(SRC)
 	$(CC) $(CFLAGS) -c $(SRC)
 
 clean:
-	rm -f $(OBJS)
+	rm -f $(OBJS) $(BNS_OBJS)
 
 fclean: clean
 	rm -f $(NAME)
@@ -55,3 +58,7 @@ fclean: clean
 re: fclean all
 
 .PHONY: re all clean fclean
+
+bonus: $(NAME)
+	gcc $(FLAGS) -c $(BNS_SRCS) -I ./
+	ar rc $(NAME) $(BNS_OBJS)
