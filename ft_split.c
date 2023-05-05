@@ -2,9 +2,12 @@
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: fcoca-me <fcoca-me@student.42malaga.com    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
+/*                                                    +:+ +:+        
+	+:+     */
+/*   By: fcoca-me <fcoca-me@student.42malaga.com    +#+  +:+      
+	+#+        */
+/*                                                +#+#+#+#+#+  
+	+#+           */
 /*   Created: 2023/05/02 10:13:50 by fcoca-me          #+#    #+#             */
 /*   Updated: 2023/05/02 10:13:50 by fcoca-me         ###   ########.fr       */
 /*                                                                            */
